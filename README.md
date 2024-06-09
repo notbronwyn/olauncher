@@ -33,3 +33,6 @@ The commands must be run in the following order to build from source:
 - `genredist.sh` (optional)
   - Make sure you've run `git submodule update --init` as this script uses the `AutoOL` submodule.
   - Generates the redistributable JAR - Do not distribute the JARs in `olauncher/target`!
+
+### Note about compiling on Windows
+Maven 3.9.7 has an issue where it fails to resolve JavaFX dependencies. The newest version to work is Maven 3.9.6
